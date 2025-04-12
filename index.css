@@ -1,0 +1,106 @@
+* {
+  font-family: "Inter";
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* position: fixed;
+  width: 100%; */
+  
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.home-btn {
+  background-color: #73c7c7;
+  border-radius: 20px;
+ 
+}
+
+.login-btn {
+  background-color: #73c7c7;
+  border-radius: 20px;
+}
+
+.contact-btn {
+  background-color: #73c7c7;
+  border-radius: 20px;
+}
+
+.about-btn {
+  background-color: #73c7c7;
+  border-radius: 20px;
+}
+
+/* .home-space{
+    border: 20px;
+    padding: 20px;
+} */
+ h1{
+    text-align: center;
+    padding-top: 20px;
+ }
+
+ .welcome-message{
+    display: flex;
+    align-items: stretch;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* align-content: space-between; */
+    flex-wrap: nowrap;
+   
+
+ }
+
+ .grocery-image{
+    width: 550px;
+    height: 450px;
+    border: white;
+    border-radius: 5px;
+    
+ }
+
+ .message{
+    width: 500px;
+    height: 410px;
+    background-color: #fcf4f4;
+    border-radius:5px ;
+    padding: 20px;
+    margin-right:20px ;
+    
+ }
+
+ .intro-p1{
+   padding-bottom: 35px;
+ }
+ 
+ .intro-p2{
+    padding-bottom: 35px;
+ }
+
+ .intro-p3{
+    padding-bottom: 35px;
+ }
