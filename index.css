@@ -31,7 +31,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(247, 203, 203);
 }
 
 .home-btn {
@@ -62,6 +62,12 @@ li a:hover {
  h1{
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ h2{
+  text-align: center;
+    padding-top: 50px;
  }
 
  .welcome-message{
@@ -104,3 +110,114 @@ li a:hover {
  .intro-p3{
     padding-bottom: 35px;
  }
+
+ .about-us{ 
+  background-color: #fcf4f4;
+  border-radius:5px ;
+  padding-top:50px;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-bottom: 50px;
+ margin-top: 20px ;
+ margin-left: 105px;
+ margin-right: 105px;
+ margin-bottom: 20px;
+ }
+
+ .our-products{
+  background-color: #fcf4f4;
+  border-radius:5px ;
+  padding-top:50px;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-bottom: 50px;
+  margin-top: 20px ;
+  margin-left: 105px;
+  margin-right: 105px;
+  margin-bottom: 20px;
+  display: flex;
+
+ }
+
+ .carousel-box{
+width:20px ;
+
+ }
+
+ .container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue; 
+}
+
+.room {
+  border: 1px solid;
+  font-size: 50%;
+  text-align: center;
+}
+
+
+#living-room {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3; 
+}
+
+#kitchen {
+  grid-column: 4 / 6;
+  grid-row: 3 / 6;
+}
+
+#bedroom {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+#bathroom {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+#closet {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.button-roles{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+
+.role{
+  background-color: #04AA6D;
+  border: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  
+}
+
+
+.role-button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #73c7c7;
+}
+
+.role-button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
