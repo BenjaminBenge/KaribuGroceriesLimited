@@ -18,76 +18,92 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Manager Sign Up</h1>
+    <h1>Credit Customers</h1>
     <div class="space-around-manager-login">
       <div class="manager-login">
-        <h4>Please enter your login details</h4>
-        <form action="">
+        <h4>Please enter customer's details</h4>
+        <form action=""  id="form"  onsubmit="return validateUserForm(event)" >
           <div class="imgcontainer">
             <img src="/images/flowers.jpg" alt="Avatar" class="avatar" />
           </div>
-          <label for="fname">First Name</label><br />
-          <input type="text" id="fname" name="fname" value="" /><br />
+          <label for="fname">Name Of Buyer</label><br />
+          <input type="text" id="buyerName" name="buyername" value="" /><br />
+          <small id="buyerNameError"></small>
           <br />
-          <label for="fname">Second Name:</label><br />
-          <input type="text" id="Sname" name="Sname" value="" /><br />
+          <label for="gender">Gender:</label><br />
+          <select name="sex" id="gender" form="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <small id="genderError"></small>
+          <br/>
+          <label for="NIN">NIN:</label><br />
+          <input type="text" id="NINumber" name="NIN" value="" /><br />
+          <small id="NINumberError"></small>
           <br />
-          <label for="fname">Email:</label><br />
-          <input type="email" id="email" name="email" value="" /><br />
-          <br />
-          <label for="lname">Password:</label><br />
+          <label for="fname">Phone Number:</label><br />
           <input
-            type="password"
-            id="password"
-            name="password"
+            type="text"
+            id="phoneNumber"
+            name="telePhoneNumber"
             value=""
-          /><br /><br />
-          <label for="fname">Confirm Password:</label><br />
-          <input type="email" id="email" name="email" value="" /><br />
+          /><br />
+          <small id="phoneNumberError"></small>
+          <br />
+          <small id="phoneNumberError"></small>
+          <label for="amountDue">Amount Due:</label><br />
+          <input type="text" id="password" name="amountDue" value="" />
+          <small id="amountDueError"></small>
+          <br /><br />
+          <label for="dueDate">Due Date:</label><br />
+          <input type="date" id="dueDate" name="dueDate" value="" /><br />
+          <small id="dueDateError"></small>
           <br />
           <label for="lname">Date of Birth:</label><br />
-          <input
-            type="date"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
-          <label for="lname">National ID Number:</label><br />
-          <input
-            type="text"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
+          <input type="date" id="dateOfBirth" name="D.O.B" value="" />
+          <small id="dateOfBirthError"></small>
+          <br /><br />
+          <label for="produce">Produce Name:</label><br />
+          <select name="produce" id="produceName" form="produceName">
+            <option value="Beans">Beans</option>
+            <option value="Grains">Grains</option>
+            <option value="Maize">Maize</option>
+            <option value="CowPeas">Cow Peas</option>
+            <option value="SoyBeans">Soy Beans</option>
+          </select>
+          <small id="produceNameError"></small>
+          <br />
           <label for="lname">Marital Status:</label><br />
-          <input
-            type="text"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
-          <label for="lname">Phone Number:</label><br />
-          <input
-            type="text"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
+          <select name="maritalStatus" id="maritalStatus" form="produceName">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widow/Widwer">Widow/Widower</option>
+          </select>
+          <small id="MaritalStatusError"></small>
+          <br />
+          <label for="address">Address</label><br />
+          <input type="text" id="address" name="address" value="" /><br />
+          <small id="addressError"></small>
+          <label for="city">City</label><br />
+          <input type="text" id="city" name="city" value="" /><br />
+          <small id="cityError"></small>
+          <br />
+          <label for="lname">SalesAgent:</label><br />
+          <select name="salesAgentName" id="salesAgentName" form="">
+            <option value="">Sales Agent Name</option>            
+          </select>
+          <small id="salesAgentNameError"></small>
+          <br/>
+          
           <input type="submit" value="Submit" />
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
 
           <div class="lower-login-section" style="background-color: #f1f1f1">
             <button type="button" class="cancelbtn">Cancel</button>
-            <span class="password">Forgot <a href="#">password?</a></span>
-            <span class="create-account"
-              >Have no account? <a href="#"> Create One</a></span
-            >
           </div>
         </form>
       </div>
     </div>
   </body>
+<script src="public/validation.js"></script>
 </html>

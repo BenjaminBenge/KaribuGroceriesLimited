@@ -255,7 +255,7 @@ input[type=password]:focus {
   background-color: rgb(217, 240, 248);
 }
 
-input[type=password]{
+input[type=password], select{
   width: 100%;
   padding-top: 12px;
   padding-right: 20px;
@@ -268,7 +268,7 @@ input[type=password]{
 }
 
 
-input[type=text]{
+input[type=text] , input[type=number]{
   width: 100%;
   padding-top: 12px;
   padding-right: 20px;
@@ -373,17 +373,38 @@ span.create-account{
   color: white;
 }
 
-.table{
+/* .table{
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px ;
+} 
+
+.space-around-table{
+
   border-radius: 10px;
-  background-color: #eefafa;
+   background-color: #eefafa; 
   padding-top: 100px;
   padding-left: 175px;
   padding-right: 505px;
   padding-bottom: 50px;
-} 
+  
+} */ 
+
+.table{
+
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-left: 150px;
+      margin-right: 150px;
+
+}
 
 .space-around-table{
-  margin-top: 10px;
-  margin-left: 200px;
-  margin-right: 200px ;
+  border-radius: 10px;
+  background-color: #eefafa;
+  margin: 200px  
+} 
+
+.credit-heeader{
+  
 }
