@@ -22,15 +22,15 @@
     <div class="space-around-manager-login">
       <div class="manager-login">
         <h4>Please enter your login details</h4>
-        <form action="">
+        <form action="" id="myForm">
           <div class="imgcontainer">
             <img src="/images/flowers.jpg" alt="Avatar" class="avatar" />
           </div>
           <label for="fname">First Name</label><br />
-          <input type="text" id="fname" name="fname" value="" /><br />
+          <input type="text" id="firstName" name="fname" value="" /><br />
           <br />
           <label for="fname">Second Name:</label><br />
-          <input type="text" id="Sname" name="Sname" value="" /><br />
+          <input type="text" id="secondName" name="Sname" value="" /><br />
           <br />
           <label for="fname">Email:</label><br />
           <input type="email" id="email" name="email" value="" /><br />
@@ -43,7 +43,7 @@
             value=""
           /><br /><br />
           <label for="fname">Confirm Password:</label><br />
-          <input type="email" id="email" name="email" value="" /><br />
+          <input type="text" id="email" name="email" value="" /><br />
           <br />
           <label for="lname">Date of Birth:</label><br />
           <input
@@ -60,12 +60,12 @@
             value=""
           /><br /><br />
           <label for="lname">Marital Status:</label><br />
-          <input
-            type="text"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
+          <select name="maritalStatus" id="maritalStatus" form="produceName">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widow/Widwer">Widow/Widower</option>
+          </select>
           <label for="lname">Phone Number:</label><br />
           <input
             type="text"

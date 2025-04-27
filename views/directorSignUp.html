@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/public/css/index.css" />
 
     <ul>
       <div class="home-space">
@@ -18,23 +18,33 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Manager Sign Up</h1>
+    <h1>Director Sign Up</h1>
     <div class="space-around-manager-login">
       <div class="manager-login">
         <h4>Please enter your login details</h4>
-        <form action="">
+        <form action="" id="myForm">
           <div class="imgcontainer">
-            <img src="/images/flowers.jpg" alt="Avatar" class="avatar" />
+            <img src="/public/images/flowers.jpg" alt="Avatar" class="avatar" />
           </div>
+          <div>
           <label for="fname">First Name</label><br />
-          <input type="text" id="fname" name="fname" value="" /><br />
+          <input type="text" id="firstName" name="fname" value="" /><br />
           <br />
+          <small id="firtNameError"></small>
+        </div>
+        <div>
           <label for="fname">Second Name:</label><br />
-          <input type="text" id="Sname" name="Sname" value="" /><br />
+          <input type="text" id="secondName" name="Sname" value="" /><br />
           <br />
-          <label for="fname">Email:</label><br />
+          <small id="secondNameError"></small>
+        </div>
+        <div>
+          <label for="email">Email:</label><br />
           <input type="email" id="email" name="email" value="" /><br />
           <br />
+          <small id="emailError"></small>
+        </div>
+        <div>
           <label for="lname">Password:</label><br />
           <input
             type="password"
@@ -42,38 +52,53 @@
             name="password"
             value=""
           /><br /><br />
-          <label for="fname">Confirm Password:</label><br />
-          <input type="email" id="email" name="email" value="" /><br />
+          <small id="passwordError"></small>
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password:</label><br />
+          <input type="password" id="confirmPassword" name="confirmPassword" value="" /><br />
           <br />
-          <label for="lname">Date of Birth:</label><br />
+          <small id="confirmPasswordError"></small>
+        </div>
+        <div>
+          <label for="d.o.b">Date of Birth:</label><br />
           <input
             type="date"
             id="password"
             name="password"
             value=""
           /><br /><br />
+        </div>
+        <div>
           <label for="lname">National ID Number:</label><br />
           <input
             type="text"
-            id="password"
-            name="password"
+            id="ninNumber"
+            name="ninNumber"
             value=""
           /><br /><br />
+          <small id="ninNumberError"></small>
+        </div>
+        <div>
           <label for="lname">Marital Status:</label><br />
+          <select name="maritalStatus" id="maritalStatus" form="produceName">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widow/Widwer">Widow/Widower</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label><br />
           <input
             type="text"
-            id="password"
-            name="password"
+            id="phone"
+            name="phone"
             value=""
           /><br /><br />
-          <label for="lname">Phone Number:</label><br />
-          <input
-            type="text"
-            id="password"
-            name="password"
-            value=""
-          /><br /><br />
-          <input type="submit" value="Submit" />
+          <small id="phoneError"></small>
+        </div>
+          <input type="submit" value="Submit"  id="submitButton"/>
           <label>
             <input type="checkbox" checked="checked" name="remember" /> Remember
             me
@@ -89,5 +114,7 @@
         </form>
       </div>
     </div>
+    <script src="/public/js/signUpValidation.js">
+    </script>
   </body>
 </html>
